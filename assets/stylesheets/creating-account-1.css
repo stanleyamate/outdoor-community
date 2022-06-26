@@ -1,0 +1,187 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+    height: 200px;
+    position: relative;
+    
+}
+.ellipse{
+    -webkit-clip-path:circle(3rem);
+    clip-path: circle(3rem);
+    background: linear-gradient(180deg, rgba(20, 108, 66, 0.05) 0%, #8CCA4F 100%);
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    
+}
+.ellipse-one{
+    left: 383px;
+    top: 109px;
+}
+.ellipse-two{
+    left: 125px;
+    top: -36px;
+    opacity: 0.12;
+}
+.container{
+    position: relative;
+}
+
+.container .user{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -18em;
+    left: 3%;
+    margin-bottom: 2em;
+
+}
+.user .image-container, .user #camera-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container .name-display{
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2.3em;
+    margin-bottom: 1em;
+    
+}
+.user #camera-con {
+    position: absolute; 
+    left: 219px;
+    top: 218px;
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(180deg, #36863F 0%, #7AB83B 100%);
+    border-radius: 14px;
+}
+
+
+.user .image-container .profile-pic{
+    background: url(.jpg), #000000;
+    border: 3px solid rgba(58, 137, 62, 0.15);
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+    width: 124px;
+    height: 124px;
+    left: 133px;
+    top: 137px;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+#form .round-rectangle{
+    padding: 1em;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "fullname fullname"
+                         "city state"
+                         "age age"
+                         "favorite_activity favorite_activity"
+                         "bio bio";
+                         
+}
+#form input, #form textarea, #form .state #state{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 4px 30px rgba(80, 153, 61, 0.05);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 2em;
+    
+}
+#form .full_name{
+    grid-area: fullname;
+}
+#form .bio{
+    grid-area: bio;
+}
+#form .age{
+    grid-area: age;
+}
+#form .favorite_activity{
+    grid-area: favorite_activity;
+}
+#form .city{
+    grid-area: city;
+}
+#form .state{
+    width: 95%;
+    grid-area: state;
+    margin-left: .5em;
+}
+#form .state #state{
+    padding: 1.3em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../svg/Vector\ 2.svg') no-repeat;
+    background-position: right 10px top 50%;
+}
+#form .state #state :focus,
+#form .state #state:hover{
+    outline: none;
+    background:#7ab83b48;
+    border: 1px solid var(--primary-green);
+}
+#form .state #state option{
+    /* background: var(--primary-green); */
+    border: none;
+}
+#form .bio textarea{
+    padding-top: 1em;
+}
+#form input{
+    height: 54px;
+}
+#form #age{
+    padding-right: 1em;
+}
+#form label{
+    margin-top: 1em;
+}
+
+#form label p{
+    color:var(--light-grey);
+    text-transform: capitalize;
+}
+#form label .field-name{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+    
+}
+#form label .field-name img{
+    margin-right: .5em;
+}
+
+/* continue botton*/
+#form .continue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em auto;
+}
+#form .continue .btn{
+    margin-bottom: 1em;
+}
+#form .continue .note{
+    display: flex;
+}
+#form .note a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-green);
+}
+

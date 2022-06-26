@@ -1,0 +1,72 @@
+#form .upload{
+    margin-top: -3em;
+}
+#form .round-rectangle{
+    padding: 1em;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+#form .add-card{
+    grid-template-areas: "heading heading"
+                         "card-number card-number"
+                         "expiry-date cvv"
+                         "card-holder-name card-holder-name";
+    gap: 1em;
+}
+#form .upload{
+    grid-template-areas: "heading heading"
+                         "front-upload back-upload";
+    gap: 1em;
+    margin-bottom: 1em;
+}
+#form .front-upload{
+    grid-area: front-upload;
+}
+#form .back-upload{
+    grid-area: back-upload;
+}
+#form #front-upload,
+#form #back-upload{
+    display: none;
+    border: 1px dotted var(--secondary-green);
+}
+#form #front-upload + label .upload-wrapper,
+#form #back-upload + label .upload-wrapper{
+    height: 100%;
+    width: 100%;
+    border: 1px dotted var(--secondary-green);
+    padding: 1em;
+    border-radius: 6px;
+    text-align: center;
+    transition: all.2s ease;
+}
+#form #front-upload + label .upload-wrapper:hover,
+#form #back-upload + label .upload-wrapper:hover{
+    background: var(--secondary-green);
+}
+#form input, #form .state #state{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 4px 30px rgba(80, 153, 61, 0.05);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 2em;
+    
+}
+#form .card-number{
+    grid-area: card-number;
+}
+#form .expiry-date{
+    grid-area: expiry-date;
+}
+#form .cvv{
+    grid-area: cvv;
+}
+#form .card-holder-name{
+    grid-area: card-holder-name;
+}
+#form .heading{
+    grid-area: heading;
+}
