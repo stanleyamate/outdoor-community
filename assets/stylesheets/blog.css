@@ -122,6 +122,23 @@ input[type="file"], #tag{
                           gap: 1em;
 
 }
+.post-card-with-image{
+    margin: 1em 0;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "normal-image-circle username-location username-location username-location username-location post-date post-date post-date post-date post-date"
+                         "blog-content blog-content blog-content blog-content blog-content blog-content blog-content blog-content blog-content blog-content"
+                         "post-heading post-heading post-heading post-heading post-heading post-heading post-heading ... ... ..."
+                         "post-tag post-tag ... ... like-comment like-comment  like-comment like-comment like-comment like-comment";
+                         gap: 1em;
+}
+.post-heading{
+    grid-area: post-heading;
+}
+.post-tag{
+    grid-area: post-tag;
+}
 .normal-image-circle{
     grid-area: normal-image-circle;
 }
@@ -131,6 +148,11 @@ input[type="file"], #tag{
 .blog-content{
     grid-area: blog-content;
 }
+.blog-content-image{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 14px;
+}
 .post-date{
     grid-area: post-date;
     justify-content: flex-end;
@@ -139,6 +161,8 @@ input[type="file"], #tag{
 .like-comment{
     grid-area: like-comment;
     justify-content: flex-end;
+    position: relative;
+    top: -.5rem;
 }
 .like-comment, 
 .username-location .location,

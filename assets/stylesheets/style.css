@@ -274,7 +274,7 @@ input[type="submit"]{
     text-transform: capitalize;
 }
 .text-green{
-    color: var(--primary-green);
+    color: green;
     text-transform: capitalize;
 }
 .text-white{
