@@ -1,0 +1,140 @@
+.container{
+    padding: 1em;
+}
+.pt{
+    padding-top: 10em;
+}
+.item-detail-wrapper{
+    position: relative;
+}
+.hero-grid{
+    position: fixed;
+    z-index: 4;
+    background: #fff;
+    width: 100%;
+
+}
+.slider{
+    position: relative;
+}
+.slider-images{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.slider .shadow-con{
+    height: 55px;
+    border-radius: 16px;
+    width: 85%;
+    border: 0px;
+    background: transparent;
+    position: absolute;
+    bottom: 5px;
+    left: 7%;
+    margin-bottom: 1em;
+    box-shadow: 0 10px 10px rgb(170, 168, 168);
+}
+.slider-images .active-image{
+    display: block;
+}
+
+.slider img{
+    width: 100%;
+    object-fit: fill;
+    border-radius: 1em;
+}
+main h3{
+    margin-top: 1em;
+}
+
+/* PLans*/
+.plans{
+    margin-top: .5em;
+    display: flex;
+    justify-content: space-between;
+}
+.plans div{
+    padding: .5em;
+    border-radius: 4px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+.user-info h5, .user-info img:last-child{
+
+    margin-left: .5em;
+}
+
+/* location */
+.location{
+    display: flex;
+}
+.description{
+    overflow-x: hidden;
+    height: 169px;
+    border-radius: 16px;
+    padding: 1em;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+/* .description::-webkit-scrollbar-button{
+    background: var(--secondary-green) !important;
+    width: 1em;
+    height: .8em;
+}
+.description::-webkit-scrollbar{
+    background: var(--secondary-green) !important;
+    width: 2px;
+    height: .8em;
+    margin-right: .5em;
+} */
+.description .heading{
+    margin-bottom: 1em;
+}
+.description p{
+    font-size: 1.2rem;
+}
+.description p :first-child{
+    margin-bottom: 1em;
+}
+
+.btn{
+    font-size: 1.2em;
+}
+.message{
+    background: linear-gradient(5.55deg, #36863F 6.01%, #7AB83B 97.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    --text-fill-color: transparent;
+    border: 1px solid var(--secondary-green);
+    /* color: var(--secondary-green); */
+}
+.message, .book{
+    padding: .5em 1.5em;
+    display: flex;
+    align-items: center;
+}
+.map{
+    height: 105px;
+    margin: 1em 0;
+    border-radius: 16px;
+    object-fit: fill;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.gmap_canvas {
+    border-radius: 16px;
+    border: 1px solid rgb(192, 192, 192);
+    overflow:hidden;
+    background:none !important;
+    height:100%;
+    width:100%;
+
+}

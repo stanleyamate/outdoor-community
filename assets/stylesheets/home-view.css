@@ -1,0 +1,130 @@
+
+.map-view-container,
+.list-view-container
+{
+    overflow-x: hidden;
+    height: 100vh;
+    position: relative;
+}
+.rectangle{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr max-content auto;
+    gap: .5em;
+}
+.profile-image-circle{
+    grid-area: profile-image-circle;
+}
+.search{
+    grid-area: search;
+}
+
+.category{
+    grid-area: category;
+}
+.find-equipment-wrapper{
+    grid-area:find-equipment-wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    grid-area:logo;
+    justify-self: center;
+}
+.activities{
+    width: 100em;
+    grid-area:activities;
+    display: flex;
+    padding: .5em;
+    position: absolute;
+    z-index: 1;
+    top: 11em;
+}
+.activities:hover .activities > .activity{
+    overflow-x: scroll !important;
+}
+.notification{
+    grid-area: notification;
+}
+.toggle{
+    grid-area: toggle;
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper:not(.image-wrapper:last-child ){
+    margin-right: .5em;
+}
+.image-wrapper:first-child{
+    margin-left: 1em;
+}
+.activity{
+    width: 5em;
+    background:linear-gradient(90deg , rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../img/hero2.jpg') no-repeat;
+    object-fit: cover;
+    background-position: left 50% top 0%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: .7em;
+    
+}
+.hero-grid{
+    background: #fff;
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 14vh;
+}
+.card-group-row{
+    position: fixed;
+    bottom: 60px;
+}
+.arrow-cirle-right{
+    cursor: pointer;
+    border-radius: 50%;
+}
+.arrow-cirle-right:hover{
+    background: var(--primary-green);
+    fill: #fff;
+}
+
+/*  MAP VIEW */
+.map-view-container .hero-grid,.list-view-container .hero-grid{
+    grid-template-areas: "category logo logo logo logo logo notification  profile-image-circle"
+                         "search search search search search search toggle toggle"
+                         "find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper"
+                         "activities activities activities activities activities activities activities activities";
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:700px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+    height:100%;
+    width:600px;
+
+}
+.map-view, .list-view{
+    height: 90vh;
+    width: auto;
+    position: relative;
+    z-index: -2;
+    top: -3em;
+}
+
+.home{
+}
+
+.transparent{
+
+}
+
+/*  LIST VIEW */
+

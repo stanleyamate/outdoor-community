@@ -1,0 +1,27 @@
+.hero-grid{
+    display: flex;
+    align-items: center;
+}
+.col-2{
+    height: 130px;
+}
+.col-2 .back-arrow{
+    margin-left: 1em;
+}
+.col-2 .heading{
+    margin-left: 3em;
+}
+
+.col-3{
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:"category ... ... logo logo ...notification profile-image-circle"
+                        "search search search search search search search search"
+                        "change-location change-location change-location change-location change-location change-location change-location change-location";
+    gap: 1em;
+    position: fixed;
+    background: #fff;
+    top: 0;
+}

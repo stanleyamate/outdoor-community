@@ -1,0 +1,196 @@
+.container{
+    padding: 1em;
+    height: fit-content;
+}
+.round-rectangle{
+   padding: 1em;
+}
+
+/* reviews */
+
+.reviews-row{
+   width: 90%;
+   display: flex;
+}
+
+.bio-wrapper{
+    position: relative;
+    top: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:"transaction reviews"
+                        "activity activity"
+                        "bio bio";
+    gap: 1em;
+}
+.pt{
+    padding-top: 5em;
+}
+.item-detail-wrapper{
+    position: relative;
+}
+.hero-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:"btn-wrapper grid-profile ..."
+                        "bg-green bg-green bg-green";
+    position: fixed;
+    z-index: 4;
+    background: #fff;
+    width: 100%;
+}
+.bg-green{
+    border-radius: 16px;
+}
+.bg-l-green{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg-l-green div{
+    display: flex;
+    align-items: center;
+}
+.bg-l-green div img{
+    margin-right: .5em;
+}
+.btn-wrapper{
+    grid-area: btn-wrapper;
+}
+.bio{
+    grid-area: bio;
+    margin-bottom: 18rem;
+}
+.grid-profile{
+    grid-area: grid-profile;
+    justify-self: center;
+}
+.reviews{
+    grid-area: reviews;
+}
+.transaction{
+    grid-area: transaction;
+}
+.bg-green{
+    grid-area: bg-green;
+    margin-top: 2em;
+}
+.grid-profile .text-white{
+    margin-bottom: 2em;
+}
+.heading{
+    margin-left: 0 !important;
+}
+
+.profile{
+    display: flex;
+    margin-bottom: 1em;
+}
+.profile .user-pic{
+    margin-right: 1em;
+}
+.profile .profile-info .text-white{
+    margin-top: .3em;
+    margin-bottom: 1em;
+}
+.activity{
+    grid-area: activity;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.green-light-wrapper{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.age-location span:first-child{
+    border-right: 2px solid rgba(255, 255, 255, 0.3);;
+    padding-right: .8em;
+}
+.age-location span:last-child{
+    margin-left: .8em;
+}
+.btn{
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    padding: 1em ;
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 1.6rem;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn img{
+    margin-right: .5em;
+}
+.ratings{
+    background: #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    bottom: 140px;
+    justify-content: space-between;
+    height: 1em;
+}
+.ratings .rev-title{
+    grid-area: rev-title;
+}
+.ratings strong{
+    margin-right: .3em;
+}
+.reviews-row{
+    grid-area: reviews-row;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    background: #fff;
+}
+.card-review{
+    width: 300px;
+    margin-right: 1em;
+}
+.overall-rating{
+    grid-area: overall-rating;
+    display: flex;
+    align-items: center;
+}
+
+.review-detail{
+    padding: 0 !important;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-row: auto;
+    grid-template-areas:" normal-image-circle username-desc username-desc username-desc ... user-rate";
+}
+.normal-image-circle{
+    grid-area: normal-image-circle;
+    margin-right: .5em;
+}
+.user-rate {
+    grid-area: user-rate ;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.username-desc{
+    grid-area: username-desc;
+}
+.username-desc p{
+   font-size: 1.3rem !important;
+}
+.review-desc{
+    grid-area: review-desc;
+}
+.user-rate .text-green{
+    margin-left: .4em !important;
+}

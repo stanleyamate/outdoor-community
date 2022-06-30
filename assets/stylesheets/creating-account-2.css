@@ -7,6 +7,14 @@
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
 }
+.rectangle{
+    position: relative;
+}
+.rectangle .btn-wrapper{
+    position: absolute;
+    left: 20px;
+    top: 56px;
+}
 #form .add-card{
     grid-template-areas: "heading heading"
                          "card-number card-number"
