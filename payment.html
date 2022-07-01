@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/header-layout.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/payment.css">
+    <title>Payment</title>
+</head>
+<body>
+    <div class="payment-wrapper">
+        <header class="rectangle container hero-grid col-2">
+            <div class="btn-wrapper btn-color-wrapper">
+                <img src="./assets/svg/arrow-back-svgrepo-com.svg" alt="" srcset="">
+            </div>
+            <h2 class="heading grid-profile">payment</h2>
+        </header>
+        <main class="container payment">
+            <div class="booking-card round-rectangle">
+                <img class="image-medium" src="./assets/img/hero2.jpg" alt="profile-pic" srcset="">
+                <div class="booking-main">
+                    <h4 class="heading">climbing rope</h4>
+                    <div class="user-info">
+                     <img class="image-small" src="./assets/img/hero2.jpg" alt="profile-pic" srcset="">
+                     <h5 class="heading text-green">amate stanley</h5>
+                    </div>
+                </div>
+                <div class="bg-l-green price">
+                    <p class="text-green"><strong>$30</strong></p>
+                </div>
+                    <div class="dates">
+                        <div>
+                            <p class="text-grey">pick up date</p>
+                            <h4 class="heading text-green">
+                                14 april 2022
+                            </h4>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="text-grey">drop off date</p>
+                            <h4 class="heading text-green">
+                                15 april 2022
+                            </h4>
+                        </div>
+                    </div>
+            </div>
+            <section class="add-card-button">
+                <h3 class="heading">my cards</h3>
+                <a class="btn-green-border add-card" href="#" target="_blank">+ Add card</a>
+            </section>
+            <section class="payment-cards">
+                <div class="round-rectangle pay-card blue-pay-card">
+                   <div class="bank">
+                    <div class="ellipse-small"></div>
+                    <h4 class="heading">citi bank</h4>
+                   </div>
+                   <div class="ellipse-large-1"></div>
+                   <div class="ellipse-large-2"></div>
+                   <img class="visa" src="./assets/svg/pngwing 1.svg" alt="" srcset="">
+                   <h3 class="heading card-name">amate stanley</h3>
+                   <p class="card-num-display">4567 - **** - 345</p>
+                   <p class="expiry-info text-grey">06/22</p>
+                   <img class="tick" src="./assets/svg/tick-circle.svg" alt="" srcset="">
+                </div>
+                <div class="round-rectangle pay-card green-pay-card">
+                   <div class="bank">
+                    <div class="ellipse-small"></div>
+                    <h4 class="heading">citi bank</h4>
+                   </div>
+                   <div class="ellipse-large-1"></div>
+                   <div class="ellipse-large-2"></div>
+                   <img class="visa" src="./assets/svg/pngwing 1.svg" alt="" srcset="">
+                   <h3 class="heading card-name">amate stanley</h3>
+                   <p class="card-num-display">4567 - **** - 345</p>
+                   <p class="expiry-info text-grey">06/22</p>
+                   <img class="tick" src="./assets/svg/tick-circle.svg" alt="" srcset="">
+                </div>
+            </section>
+        </main>
+        <div class="shade">
+            <form id="form" action="">
+                <span id="bar"></span>
+                <h3 class="heading">add card or edit info</h3>
+                <label class="card-number" for="card number">
+                    <div class="field-name">
+                        <img src="./assets/svg/card.svg" alt="">
+                        <p>card number</p>
+                    </div>
+                    <input type="number" name="card-number" id="card-number" max="16">
+                </label>
+                <label class="expiry-date" for="expiry-date">
+                    <div class="field-name">
+                        <img src="./assets/svg/calendar.svg" alt="">
+                        <p>expiry date</p>
+                    </div>
+                    <input type="month" name="expiry-date" id="expiry-date">
+                </label>
+                <label class="cvv" for="card number">
+                    <div class="field-name">
+                        <img src="./assets/svg/password-check.svg" alt="">
+                        <p>CVV</p>
+                    </div>
+                    <input type="number" name="cvv" id="cvv" max="16">
+                </label>
+                <label class="card-holder-name" for="card holder name">
+                    <div class="field-name">
+                        <img src="./assets/svg/profile-circle.svg" alt="">
+                        <p>card holder name</p>
+                    </div>
+                    <input type="text" name="card-holder-name" id="card-holder-name">
+                </label>
+            <div class="save">
+                <button class="round-border-bg-green">save</button>
+            </div>
+            </form>
+        </div>
+        <footer class="footer container">
+            <a href="#" class="bg-green-round pay">pay $30</a>
+        </footer>
+    </div>
+</body>
+</html>

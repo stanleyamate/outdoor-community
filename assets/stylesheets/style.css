@@ -47,6 +47,11 @@ body{
     width: 1.5em;
     border-radius: 50%;
 }
+.sender-img{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
 .image-medium, .activity{
     width: 78px;
     height: 78px;
@@ -101,7 +106,7 @@ body{
 .card-group-column{
     display: flex;
     flex-direction: column;
-    padding: 2em auto;
+    padding: 2em .8em 2em 1em;
     align-items: center;
 }
 .card-group-column .card-wrapper{
@@ -153,7 +158,8 @@ body{
 }
 
 /* UTILITY */
-input[type="submit"]{
+input[type="submit"],
+button[type="submit"]{
     border: none;
     border-radius: 16px;
 }
@@ -165,6 +171,9 @@ input[type="submit"]{
 }
 .text-grey{
     color: #979797;
+}
+.cap{
+    text-transform: capitalize;
 }
 .bg-light-green{
     background: rgba(122, 184, 59, 0.1);
@@ -237,6 +246,10 @@ input[type="submit"]{
     background: linear-gradient(0deg, #36863F 6.01%, #7AB83B 97.18%);
     padding: 1em;
     border-radius: 60px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+
 }
 .transparent{
     background: rgba(255, 255, 255, 0.2);
@@ -332,7 +345,12 @@ input[type="submit"]{
 /* .btn-light-green{
 
 } */
-
+.btn-green-border{
+    border: 1px solid var(--secondary-green);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--secondary-green);
+}
 .btn{
     border-radius: 28px;
 }
@@ -431,4 +449,14 @@ input[type="submit"]{
     justify-content: space-between;
     align-items: center;
     padding: auto 0;
+}
+
+
+
+
+/* demo container */
+.demo{
+    background: #00e40b;
+    width: 100%;
+    min-height: 5rem;
 }

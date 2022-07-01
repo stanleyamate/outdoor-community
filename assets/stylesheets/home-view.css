@@ -37,7 +37,7 @@
     grid-area:activities;
     display: flex;
     padding: .5em;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 11em;
 }
@@ -96,6 +96,7 @@
                          "search search search search search search toggle toggle"
                          "find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper"
                          "activities activities activities activities activities activities activities activities";
+                         position: fixed;
 }
 
 .mapouter{
@@ -119,12 +120,12 @@
     top: -3em;
 }
 
-.home{
-}
-
-.transparent{
-
-}
 
 /*  LIST VIEW */
 
+.card-group-column{
+    position: absolute;
+    width: 100%;
+    top: 250px;
+    z-index: -2;
+}

@@ -3,7 +3,9 @@
     align-items: center;
 }
 .col-2{
-    height: 130px;
+    height: 100px;
+    position: fixed;
+    width:100%;
 }
 .col-2 .back-arrow{
     margin-left: 1em;
@@ -22,6 +24,39 @@
                         "change-location change-location change-location change-location change-location change-location change-location change-location";
     gap: 1em;
     position: fixed;
+    z-index: 2;
     background: #fff;
     top: 0;
+}
+.header-with-profile{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:"arrow-back user more";
+    gap: 1em;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background: #fff;
+    top: 0;
+}
+
+.user{
+    grid-area: user;
+    display: flex;
+}
+.user .profile-image-circle{
+    margin-right: .3em;
+}
+.user p{
+    font-size: 1.3rem;
+}
+.profile-image-circle{
+
+}
+.more{
+    grid-area: more;
+    justify-self: end;
+}
+.header-with-profile .arrow-back{
+    grid-area: arrow-back;
 }

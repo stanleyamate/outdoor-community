@@ -1,0 +1,158 @@
+.book-rental{
+    position: absolute;
+    z-index: -1;
+    top: 11rem;
+    left: 0;
+    width: 100%;
+}
+header{
+ background: #fff;
+}
+.booking-card{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "image-medium booking-main price"
+    "image-medium booking-main ..."
+    "dates dates dates";
+    gap: 1em;
+    
+}
+.image-medium{
+    grid-area: image-medium;
+}
+.booking-main{
+    grid-area: booking-main;
+}
+.booking-card .user-info{
+    margin-top: .5em;
+    display: flex;
+    align-items: center;
+}
+.booking-card .image-small{
+    margin-right: .3em;
+}
+.price{
+    grid-area: price;
+    padding: .5em;
+    border-radius: 8px;
+}
+.dates{
+    grid-area: dates;
+    display: flex;
+    padding: 1em 2em;
+    justify-content: space-between;
+}
+.dates hr{
+    border: none;
+    width: 1px;
+    background: linear-gradient(180deg, #fff, rgb(197, 191, 191), #fff);
+
+}
+.dates div p{
+    text-transform: capitalize;
+}
+/* Calender */
+.calender{
+    margin-top: 1em;
+}
+ul {
+    list-style-type: none;
+}
+/* Month header */
+.month {
+    padding: 10px 25px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Month list */
+  .month ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .month ul li {
+    color: var(--secondary-green);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  /* Previous button inside month header */
+  .month .prev {
+    padding-top: 10px;
+  }
+  
+  /* Next button */
+  .month .next {
+    padding-top: 10px;
+  }
+  
+  /* Weekdays (Mon-Sun) */
+  .weekdays {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: var(--secondary-green);
+    text-align: center;
+  }
+  
+  /* Days (1-31) */
+  .days {
+    padding: 5px 0;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  /* Highlight the "current" day */
+  .days li .active {
+    padding: 4px 5px;
+    background: var(--primary-green);
+    border-radius: 50%;
+    color: white !important
+  }
+.date-buttons{
+    margin-top: .7em;
+    height:9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+.date-buttons a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    padding: .7em 2em;
+    text-transform: capitalize;
+}
+.active-button{
+    color: #fff !important;
+    background: linear-gradient(0deg, #36863F 6.01%, #7AB83B 97.18%);
+    padding: .7em 2em;
+    border-radius: 10px;
+}
+.footer{
+    padding: 1.3em 0;
+    text-align: center;
+}
+.footer a{
+    padding: .8em 2.5em;
+}

@@ -1,0 +1,255 @@
+.payment-wrapper{
+    position: relative;
+}
+.payment{
+    position: absolute;
+    z-index: -1;
+    top: 11rem;
+    left: 0;
+    width: 100%;
+}
+header{
+ background: #fff;
+}
+.booking-card{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "image-medium booking-main price"
+    "image-medium booking-main ..."
+    "dates dates dates";
+    gap: 1em;
+    
+}
+.image-medium{
+    grid-area: image-medium;
+}
+.booking-main{
+    grid-area: booking-main;
+}
+.booking-card .user-info{
+    margin-top: .5em;
+    display: flex;
+    align-items: center;
+}
+.booking-card .image-small{
+    margin-right: .3em;
+}
+.price{
+    grid-area: price;
+    padding: .5em;
+    text-align: center;
+    border-radius: 8px;
+}
+.dates{
+    grid-area: dates;
+    display: flex;
+    padding: 0 2em;
+    justify-content: space-between;
+}
+.dates hr{
+    border: none;
+    width: 1px;
+    background: linear-gradient(180deg, #fff, rgb(197, 191, 191), #fff);
+}
+.dates div p{
+    text-transform: capitalize;
+}
+.round-border-bg-green{
+    padding: .7em 3em;
+
+}
+/*add card button*/
+.add-card-button{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+}
+.add-card{
+    padding: .2em 1em;
+}
+
+/* card */
+.pay-card{
+    position: relative;
+    height: 260px;
+    margin-bottom: 1em;
+    padding: 1em 1em;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:1fr;
+    grid-template-areas: 
+    "bank bank ... ... ... visa"
+    "ellipse-small ellipse-small ellipse-large-1 ellipse-large-2 ellipse-large-2 ellipse-large-2"
+    "card-name card-name card-name card-name card-name card-name"
+    
+    "card-num-display card-num-display card-num-display card-num-display card-num-display card-num-display"
+    
+    "expiry-info expiry-info expiry-info ... ... tick";
+    overflow: hidden;
+
+}
+.blue-pay-card{
+    background: linear-gradient(45deg, rgb(44, 128, 223), rgb(149, 198, 255)) ;
+}
+.green-pay-card{
+    background: linear-gradient(45deg, rgb(16, 119, 21), rgb(74, 233, 95)) ;
+}
+.pay-card .heading,
+.card-num-display{
+    color: #fff;
+}
+.bank{
+    grid-area: bank;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.visa{
+    grid-area: visa;
+    margin-top: .5em;
+}
+.card-name{
+    grid-area: card-name;
+    align-self: flex-end;
+
+}
+.expiry-info{
+    grid-area: expiry-info;
+    align-self: flex-end;
+}
+.tick{
+    grid-area: tick;
+    justify-self:end;
+    align-self: flex-start;
+}
+.ellipse-small{
+    height: 40px;
+    width: 40px;
+    margin: 0 .8em;
+    -webkit-clip-path:circle(2rem);
+    clip-path: circle(2rem);
+    background: rgba(255, 255, 255, 0.7);
+    
+
+}
+.ellipse-large-1{
+    grid-area: ellipse-large-1;
+    width: 350px;
+    height: 352.15px;
+    background: #FFFFFF;
+    opacity: 0.05;
+    border-radius: 50%;
+    position: absolute;
+    left: 60px;
+    top:-305px;
+
+}
+.ellipse-large-2{
+    grid-area: ellipse-large-2;
+    width: 390.98px;
+    height: 366.34px;
+    background: #FFFFFF;
+    opacity: 0.05;
+    border-radius: 50%;
+    /* -webkit-clip-path:circle(2rem);
+    clip-path: circle(2rem); */
+    position: absolute;
+    left: 0;
+    top: -266px;
+
+}
+.card-num-display{
+    grid-area: card-num-display;
+    font-weight: 500;
+    align-self: flex-end;
+
+}
+.card-name{
+    grid-area: card-name;
+}
+
+.shade{
+    /* height: 100vh; */
+    background: rgba(0, 0, 0, 0.322);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: all ease .2s;
+}
+#form{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+    position: inherit;
+    background: #fff;
+    bottom: 0;
+    /* bottom: -40em; */
+    z-index: 4 !important;
+    padding: 3em 1em 0 1em;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "heading heading"
+                         "card-number card-number"
+                         "expiry-date cvv"
+                         "card-holder-name card-holder-name"
+                         "save save";
+    gap: 1em;
+
+    transition: all ease .2s;
+}
+#form input, #form .state #state{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    height: 3em;
+    box-shadow: 0px 4px 30px rgba(80, 153, 61, 0.05);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 2em;
+    
+}
+#form .field-name{
+    display: flex;
+}
+#form .field-name img{
+    margin-right: .3em;
+}
+#form .card-number{
+    grid-area: card-number;
+}
+#form .expiry-date{
+    grid-area: expiry-date;
+}
+#form .cvv{
+    grid-area: cvv;
+}
+#form .card-holder-name{
+    grid-area: card-holder-name;
+}
+
+#form .heading{
+    grid-area: heading;
+}
+#form .save{
+    grid-area: save;
+    justify-self: center;
+}
+#bar{
+
+}
+
+
+/* footer*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+}
+.pay{
+    padding: .5em 3em;
+    margin: 1em 0 !important;
+}

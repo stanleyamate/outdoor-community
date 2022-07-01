@@ -1,0 +1,183 @@
+.chat-wrapper{
+
+}
+.conversation{
+    margin: 6em 0 3em 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.info-heading{
+    margin-bottom: 2em;
+}
+.send{
+    justify-self: flex-end;
+    margin: 1em 0 1em auto;
+}
+.recieve{
+    box-shadow: none;
+    border: 1.3px solid rgb(221, 220, 220);
+}
+.recieve-wrapper{
+    margin: 1em auto 1em 0;
+    display: flex;
+}
+.recieve-wrapper .sender-img{
+    margin-right: .5em;
+}
+.conversation .info-heading, .cap{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.conversation .round-rectangle{
+    display: flex;
+    padding: .5em 1em;
+    max-width: 200px;
+}
+.conversation .round-rectangle p{
+    font-size: 12px;
+    font-weight: 100;
+}
+.conversation .round-rectangle .time{
+    align-self: flex-end;
+    margin-left: .2em;
+    font-weight: 100;
+    font-size: 10px;
+}
+.today-divider{
+    position: relative;
+}
+.today-divider .cap{
+    font-size: 1.2rem;
+    margin: 0 auto;
+    background: #fff;
+    width: fit-content;
+    padding: 0 .5em;
+    position: relative;
+    z-index: 1;
+
+}
+.today-divider div:nth-child(2){
+    width: 100%;
+    height: 1px;
+    background: #c0c0c0;
+    position: absolute;
+    top: 50%;
+}
+#message-form{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 6fr 1fr;
+}
+#message-form label{
+   background: rgba(242, 242, 242, 1);
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: .6em;
+    
+}
+#message-form .attach{
+    font-size: 2rem;
+    color: grey;
+    margin-right: .6em;
+}
+#message-form input{
+    height: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: 'poppins';
+}
+.btn-send{
+    border-radius: 12px !important;
+    padding: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.disable{
+    display: none;
+}
+
+/* ATTACHMENTS*/
+.attachments{
+    height: 240px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 32px 32px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 35%;
+    grid-template-areas:
+    "... bar ..."
+    "attach-gallery attach-camera attach-location";
+    gap: 1em;
+    padding: 0 2em;
+    position: fixed;
+    bottom: 0; /*when active */
+    z-index: 5;
+}
+/* to activate shade wen attachment shows*/
+.active{
+    width: 100%;
+    height: 150vh;
+    background: rgba(0, 0, 0, 0.288);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.attachments .bar{
+    grid-area: bar;
+    background: #DFE6E6;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    justify-self: center;
+    margin-top: .5em;
+}
+.attachments #gallery{
+    display: none;
+    padding: 1em;
+    border-radius: 16px;
+}
+.attachments #attach-gallery{
+    grid-area: attach-gallery;
+}
+#attach-camera{
+    grid-area: attach-camera;
+    
+}
+#attach-camera .btn{
+    background: #8d79f310;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+
+}
+#attach-location .btn{
+    background: #8d79f310;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+#attach-location{
+    grid-area: attach-location;
+}
+.attachments #attach-gallery label{
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    background: rgba(244, 143, 49, 0.082);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.attachments .heading{
+    text-align: center;
+}
