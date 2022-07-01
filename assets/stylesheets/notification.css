@@ -1,0 +1,89 @@
+/* header */ 
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr;
+    grid-template-areas:"category title notification-icon profile-image-circle";
+    padding-bottom: 1.5em;
+}
+.notification-icon{
+    grid-area: notification-icon;
+}
+.title{
+    grid-area: title;
+    justify-self: center;
+}
+.category{
+    grid-area: category;
+}
+.profile-image-circle{
+    grid-area: profile-image-circle;
+    margin-right: .4em;
+}
+.notification-wrapper{
+    position: relative;
+}
+
+
+
+/* main notification content */
+.thin{
+    margin-bottom: .5em;
+}
+.notification-card{
+    margin-bottom: 1em;
+
+}
+.event{
+    border-radius: 50%;
+    height: 90%;
+    padding: 0 .5em;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .4em;
+    background: rgba(58, 137, 62, 0.1);
+    
+}
+.event .emoji-pic{
+    height: 25px;
+    width: 30px;
+
+}
+.notifications-content{
+    position: relative;
+    width: 100%;
+    top: 6em;
+}
+.category-title, .notification-wrapper small{
+    grid-area: date;
+    font-size: 1rem;
+}
+.notification-wrapper small{
+    margin-top: .45em;
+}
+.notification-wrapper .notification-card{
+    height: 80px;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-areas: "profile-image-circle notification-highlight date";
+}
+.notification-wrapper .notification-highlight{
+    grid-area: notification-highlight;
+    align-self: center;
+}
+/* footer */
+
+.bg-green-round{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+.bg-green-round img{
+    margin-top: 6px;
+}
+.trans-footer-btn img{
+    margin-right: .2em;
+}

@@ -172,6 +172,9 @@ button[type="submit"]{
 .text-grey{
     color: #979797;
 }
+.thin{
+    font-weight: 100;
+}
 .cap{
     text-transform: capitalize;
 }
