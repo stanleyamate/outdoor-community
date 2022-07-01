@@ -1,0 +1,212 @@
+header{
+    position: fixed;
+    z-index: 3;
+    background: #fff;
+    text-align: center;
+}
+.col-2 .heading{
+    margin-left: 1em;
+}
+.create-listing-wrapper{
+    position: relative;
+}
+.create-listing{
+    width: 100%;
+    position: absolute;
+    top: 8em;
+}
+main{
+    padding-top: 100em;
+}
+#form .upload{
+    padding: 1em;
+    margin-bottom: 1em;
+    height: 23vh;
+}
+
+#form .upload .heading,
+#form .upload > p{
+    margin-bottom: .5em;
+}
+#form .upload > p{
+    font-size: 1.2rem;
+    color: #818181;
+}
+#form label, #form .cat-title {
+    color: #888787;
+    font-size: 14px;
+}
+#form #front-upload{
+    display: none;
+}
+#form #front-upload + label .upload-wrapper .heading{
+    color: #000;
+    font-size: 1rem;
+}
+#form .updated-images-and-uploader-wrapper{
+    display: flex;
+    width: 100%;
+    position: absolute;
+}
+#form .updated-images-and-uploader-wrapper > .listing-image{
+    margin-left: .4em;
+    position: relative;
+}
+#form .updated-images-and-uploader-wrapper > .listing-image .close{
+    background: #fff;
+    color: red;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 55px;
+    padding-bottom: .05em;
+
+
+}
+#form #front-upload + label .upload-wrapper{
+    height: 78px;
+    min-width: 78px;
+    border: 1px dotted var(--secondary-green);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px;
+    transition: all.2s ease;
+}
+
+#form input, #form select{
+    height: 40px;
+}
+#form .field-name, #form .field-name{
+    display: flex;
+    margin-bottom: .3em;
+}
+#form .field-name img, #form .field-name img{
+    margin-right: .3em;
+}
+/* #form .map{
+    width: 100%;
+    height: 100px;
+    background: #5bcfca81;
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 4px 30px rgba(80, 153, 61, 0.05);
+    border-radius: 10px;
+} */
+#form input, #form textarea
+{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 4px 30px rgba(80, 153, 61, 0.05);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+#form select
+{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+#form textarea{
+    padding-top: 1em;
+}
+#form .category{
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 4px 30px rgba(80, 153, 61, 0.05);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr;
+    grid-template-areas: "field-name field-name ..."
+                         "image-small cat-selection cat-selection";
+                         
+    margin-bottom: 1em;
+}
+#form .category .field-name{
+    grid-area: field-name;
+}
+#form .category .image-small{
+    grid-area: image-small;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    margin-left: .5em;
+}
+#form .category #category{
+    grid-area: cat-selection;
+}
+#form select{
+    /* width: 95%;
+    margin-left: .5em; */
+    /* padding-right: 1em; */
+}
+/* #form select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../svg/Vector\ 2.svg') no-repeat;
+    background-position: right 10px top 50%;
+} */
+/* #form select:focus{
+    outline: none;
+    border: 1px solid var(--secondary-green);
+} */
+#form select option{
+    border: none;
+    color: #000;
+}
+#form .location .location-change a{
+    color: var(--secondary-green);
+}
+#form .location .location-change{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .3em;
+}
+.add-listing,
+.pricing{
+    padding: 1em;
+}
+.pricing{
+    margin: 1em 0;
+}
+.pricing .heading,
+.add-listing .heading{
+    margin-bottom: 1em;
+}
+.submit-listing{
+    margin: 1em 0;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+}
+
+.map{
+    height: 105px;
+    margin: 1em 0;
+    border-radius: 16px;
+    object-fit: fill;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.gmap_canvas {
+    border-radius: 16px;
+    border: 1px solid rgb(192, 192, 192);
+    overflow:hidden;
+    background:none !important;
+    height:100%;
+    width:100%;
+
+}

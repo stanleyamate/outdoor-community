@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/header-layout.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/create-listing.css">
+    <title>Create listing</title>
+</head>
+<body>
+    <div class="creating-listing-wrapper">
+        <header class="rectangle container hero-grid col-2">
+            <div class="btn-wrapper btn-color-wrapper">
+                <img src="./assets/svg/arrow-back-svgrepo-com.svg" alt="" srcset="">
+            </div>
+            <h2 class="heading grid-profile">creating listing</h2>
+        </header>
+        <main class="container create-listing">
+            <form action="#" id="form">
+                <!-- <div class="round-rectangle upload">
+                    <h4 class="heading">upload image</h4>
+                    <p>Please add  images of your listing</p>
+                    <div class="front-upload">
+                        <input type="file" name="front-upload" id="front-upload" placeholder="Tap to upload">
+                        <label for="front-upload">
+                            <div class="upload-wrapper">
+                                <img src="./assets/svg/Group 1537.svg" alt="" srcset="">
+                                <h5 class="heading">tap to upload</h5>
+                            </div>
+                        </label>
+                    </div>
+                </div> -->
+                <div class="round-rectangle upload">
+                    <h4 class="heading">upload image</h4>
+                    <p>Please add  images of your listing</p>
+                    <div class="updated-images-and-uploader-wrapper">
+                        <div class="front-upload">
+                            <input type="file" name="front-upload" id="front-upload" placeholder="Tap to upload">
+                            <label for="front-upload">
+                                <div class="upload-wrapper">
+                                    <img src="./assets/svg/Group 1537.svg" alt="" srcset="">
+                                    <h5 class="heading">tap to upload</h5>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="listing-image">
+                            <div class="close">x</div>
+                            <img src="./assets/img/hero2.jpg" alt="" class="image-medium">
+                        </div>
+                        <div class="listing-image">
+                            <div class="close">x</div>
+                            <img src="./assets/img/hero2.jpg" alt="" class="image-medium">
+                        </div>
+                        <div class="listing-image">
+                            <div class="close">x</div>
+                            <img src="./assets/img/hero2.jpg" alt="" class="image-medium">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="round-rectangle add-listing">
+                    <h4 class="heading">list details</h4>
+                    <label class="title" for="title">
+                        <div class="field-name">
+                            <img src="./assets/svg/stickynote.svg" alt="">
+                            <p>Title</p>
+                        </div>
+                        <input type="text" name="title" id="title">
+                    </label>
+                    <div class="field-name cat-title">
+                            <img src="./assets/svg/category.svg" alt="">
+                            <p>Category</p>
+                    </div>
+                    <label class="category" for="category">
+                        
+                        <img src="./assets/img/hero2.jpg" alt="" class="image-small">
+                        <select name="category" id="category">
+                            <option value="climb">climb
+                            </option>
+                            <option value="climb">climb-1</option>
+                            <option value="climb">climb-2</option>
+                        </select>
+                    </label>
+                    <label class="description" for="description">
+                        <div class="field-name">
+                            <img src="./assets/svg/document-text.svg" alt="">
+                            <p>Description</p>
+                        </div>
+                        <textarea name="description" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <label class="location" for="location">
+                        <div class="field-name">
+                            <img src="./assets/svg/location.svg" alt="">
+                            <p>Location listed</p>
+                        </div>
+                        <div class="map">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                    </iframe>
+                                    <a href="https://123movies-to.org"></a><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-change">
+                            <p class="text-green cap">broklyn, NY</p>
+                        <a class="cap" href="#">change</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="pricing round-rectangle">
+                    <h4 class="heading">pricing</h4>
+                    <label class="per-hour" for="per-hour">
+                        <div class="field-name">
+                            <img src="./assets/svg/Vector-listing.svg" alt="">
+                            <p>Price per hour</p>
+                        </div>
+                        <input type="text" name="per-hour" id="per-hour">
+                    </label>
+                    <label class="per-day" for="per-day">
+                        <div class="field-name">
+                            <img src="./assets/svg/clock.svg" alt="">
+                            <p>Price per day</p>
+                        </div>
+                        <input type="text" name="per-day" id="per-day">
+                    </label>
+                    <label class="per-week" for="per-week">
+                        <div class="field-name">
+                            <img src="./assets/svg/timer.svg" alt="">
+                            <p>Price per week</p>
+                        </div>
+                        <input type="text" name="per-week" id="per-week">
+                    </label>
+                </div>
+                <div class="submit-listing">
+                    <button class=" round-border-bg-green">submit listing</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
