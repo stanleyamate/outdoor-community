@@ -7,6 +7,7 @@
     position: relative;
 }
 .rectangle{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr max-content auto;
@@ -18,7 +19,9 @@
 .search{
     grid-area: search;
 }
-
+.search label{
+    width: 100% !important;
+}
 .category{
     grid-area: category;
 }
@@ -27,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.2rem;
 }
 #logo{
     grid-area:logo;
@@ -93,7 +97,7 @@
 /*  MAP VIEW */
 .map-view-container .hero-grid,.list-view-container .hero-grid{
     grid-template-areas: "category logo logo logo logo logo notification  profile-image-circle"
-                         "search search search search search search toggle toggle"
+                         "search search search search search toogle toggle toggle"
                          "find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper find-equipment-wrapper"
                          "activities activities activities activities activities activities activities activities";
                          position: fixed;
@@ -112,14 +116,33 @@
     width:600px;
 
 }
-.map-view, .list-view{
+.list-view{
     height: 90vh;
     width: auto;
     position: relative;
     z-index: -2;
     top: -3em;
 }
+.map-view{
+    height: 90vh;
+    width: auto;
+    position: relative;
+    z-index: -2;
+    top: 10em;
 
+}
+.footer-gradient{
+    background: linear-gradient(180deg , transparent, #fff);
+
+}
+@media (min-width:768px) {
+    .gmap_canvas {
+        width: 100%;
+    }
+    .btn-footer{
+    justify-content: space-around;
+    }
+}
 
 /*  LIST VIEW */
 

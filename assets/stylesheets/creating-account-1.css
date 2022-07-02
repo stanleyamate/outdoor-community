@@ -1,4 +1,8 @@
+.creating-account-1{
+    width: 100%;
+}
 .hero{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,37 +32,34 @@
 .container{
     position: relative;
 }
-
 .container .user{
-    position: relative;
+    grid-area: user;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: -18em;
-    left: 3%;
+    /* position: absolute;
+    top: -18em; */
     margin-bottom: 2em;
-
 }
 .user .image-container, .user #camera-con{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 .container .name-display{
     text-transform: capitalize;
     font-size: 3rem;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 2.3em;
-    margin-bottom: 1em;
-    
+}
+.user .image-container{
+    position: relative;
 }
 .user #camera-con {
-    position: absolute; 
-    left: 219px;
-    top: 218px;
+    position: absolute;
+    top: 1.5em; 
+    left: 1.5em;
     width: 38px;
     height: 38px;
     background: linear-gradient(180deg, #36863F 0%, #7AB83B 100%);
@@ -66,6 +67,7 @@
 }
 
 #form .round-rectangle{
+    width: 100%;
     padding: 1em;
     display: grid;
     grid-template-rows: auto;
@@ -76,6 +78,9 @@
                          "favorite_activity favorite_activity"
                          "bio bio";
                          
+}
+#form{
+    width: 100%;
 }
 #form input, #form textarea, #form .state #state{
     width: 100%;
@@ -164,6 +169,7 @@
 }
 #form .continue .note{
     display: flex;
+    margin-top: .3em;
 }
 #form .note a{
     text-decoration: none;

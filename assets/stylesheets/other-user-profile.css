@@ -194,3 +194,9 @@
 .user-rate .text-green{
     margin-left: .4em !important;
 }
+@media (min-width:768px) {
+    .activity{
+      justify-content: space-around;
+    }
+    
+  }

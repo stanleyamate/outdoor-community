@@ -7,11 +7,15 @@
 }
 header{
  background: #fff;
+ grid-template-columns: 1fr 6fr 1fr;
+ grid-template-areas: 
+ "image-medium booking-main price";
+
 }
 .booking-card{
     padding: 1em;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
     grid-template-areas: 
     "image-medium booking-main price"
     "image-medium booking-main ..."
@@ -41,13 +45,15 @@ header{
 .dates{
     grid-area: dates;
     display: flex;
-    padding: 1em 2em;
+    padding: 1em;
     justify-content: space-between;
 }
 .dates hr{
     border: none;
     width: 1px;
     background: linear-gradient(180deg, #fff, rgb(197, 191, 191), #fff);
+    margin-right: .5em;
+    margin-left: .3em;
 
 }
 .dates div p{
@@ -155,4 +161,11 @@ ul {
 }
 .footer a{
     padding: .8em 2.5em;
+}
+@media (min-width:768px) {
+  .date-buttons,
+  .dates{
+    justify-content: space-around;
+  }
+  
 }

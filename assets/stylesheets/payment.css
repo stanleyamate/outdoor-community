@@ -14,7 +14,7 @@ header{
 .booking-card{
     padding: 1em;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
     grid-template-areas: 
     "image-medium booking-main price"
     "image-medium booking-main ..."
@@ -253,3 +253,12 @@ header{
     padding: .5em 3em;
     margin: 1em 0 !important;
 }
+@media (min-width:768px) {
+    .dates{
+      justify-content: space-around;
+    }
+    .col-2 .heading{
+        margin-left: 250px !important;
+    }
+    
+  }
